@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_item_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/proximanova_eegular"
+        android:gravity="start"
+        android:text="Ordered On Date"
+        android:textColor="@color/text_color_primary"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/order_item_image_layout_one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_outline_light_edge"
+            android:backgroundTint="@color/light_white"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/order_item_image_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/order_item_image_layout_two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_outline_light_edge"
+            android:backgroundTint="@color/light_white"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/order_item_image_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/order_item_recycler_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_alt_bold"
+            android:text="x 5"
+            android:textColor="@color/text_color_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/order_item_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbg"
+            android:backgroundTint="@color/light_app_color"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/proximanova_eegular"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Preview"
+            android:textColor="@color/app_color" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/order_item_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="Ordered Date"
+                android:textColor="@color/text_color_primary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/order_item_progress_order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/proxima_alt_bold"
+                android:text="Ordered Date"
+                android:textColor="@color/text_color_secondary"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="Expected Delivery Date"
+                android:textColor="@color/text_color_primary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/order_item_progress_expected_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/proxima_alt_bold"
+                android:text="Delivery Date"
+                android:textColor="@color/text_color_secondary"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proximanova_eegular"
+            android:gravity="start"
+            android:text="Order ID"
+            android:textColor="@color/text_color_primary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/order_item_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_alt_bold"
+            android:gravity="end"
+            android:text="status"
+            android:textColor="@color/app_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proximanova_eegular"
+            android:gravity="start"
+            android:text="Admin Status"
+            android:textColor="@color/text_color_primary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/order_item_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_alt_bold"
+            android:gravity="end"
+            android:text="status"
+            android:textColor="@color/app_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proximanova_eegular"
+            android:gravity="start"
+            android:text="Payment Method"
+            android:textColor="@color/text_color_primary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/order_item_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_alt_bold"
+            android:gravity="end"
+            android:text="status"
+            android:textColor="@color/text_color_primary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_payment_method_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proximanova_eegular"
+            android:gravity="start"
+            android:text="Payment Document"
+            android:textColor="@color/text_color_primary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/order_item_payment_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_alt_bold"
+            android:gravity="end"
+            android:text="status"
+            android:textColor="@color/text_color_primary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_upload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_outline_light_edge"
+        android:backgroundTint="@color/light_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/folder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/order_item_upload_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="Upload Proof"
+                android:textColor="@color/text_color_primary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/order_item_upload_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_alt_bold"
+                android:gravity="start"
+                android:text="Click Here"
+                android:textColor="@color/text_color_secondary"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/order_item_upload_image_layout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_outline_dash"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/order_item_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_white"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus"
+                app:tint="@color/text_color_secondary" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/light_white" />
+</LinearLayout>

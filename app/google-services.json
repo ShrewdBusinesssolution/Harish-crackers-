@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "328876110139",
+    "project_id": "vedi-box",
+    "storage_bucket": "vedi-box.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328876110139:android:63bfc82d87a24f3f23071e",
+        "android_client_info": {
+          "package_name": "com.vedi.vedi_box"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328876110139-huisupbqqk81njv1qoeeo31md86evjho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedi.vedi_box",
+            "certificate_hash": "4bb6e3ad30c13b685fa49addd4860b935fea9e2b"
+          }
+        },
+        {
+          "client_id": "328876110139-o0skfq7hk7vurct0b87pslffvrf4s0ns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedi.vedi_box",
+            "certificate_hash": "006c4266ad10cdf9a44527196216aa54129872c4"
+          }
+        },
+        {
+          "client_id": "328876110139-smvi2gp4qfihnba9cskdqi658536vumo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedi.vedi_box",
+            "certificate_hash": "edc76dc8d12ed923dbcfaf36690ee03e1d319057"
+          }
+        },
+        {
+          "client_id": "328876110139-su9tk5inig3rto8r8oq62fpqdokcbnjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedi.vedi_box",
+            "certificate_hash": "dd9538d9aab6c0125012065aa46ad3da1f267410"
+          }
+        },
+        {
+          "client_id": "328876110139-h1m07obhq50gqkkdht0af0ii517574kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJa3_VQyZAMFBKh9ig0eZVYgu8dX5Oz2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328876110139-h1m07obhq50gqkkdht0af0ii517574kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

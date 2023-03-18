@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vedi.vedi_box" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".utilities.Utils"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jk_Crackers"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".views.rxjava.Rx_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.contact.Contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.ProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.delivery.Delivery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.payment.Payment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.accoount_info.AccountInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.cart.Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.ViewCategory.ViewCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="vedi.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".utilities.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".notification.MessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_6LGN4ZzyHaMqfO" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

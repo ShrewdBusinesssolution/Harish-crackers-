@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_white"
+    tools:context=".views.notification.NotificationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/common_corner"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/notifications_back"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="@drawable/round_outline_light_edge"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="24dp"-->
+            <!--                    android:layout_height="24dp"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:paddingLeft="5dp"-->
+            <!--                    android:scaleType="fitCenter"-->
+            <!--                    android:src="@drawable/ic_arrow_back" />-->
+            <!--            </FrameLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="ALL NOTIFICATIONS"
+                android:textColor="@color/text_color_primary"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Notifications"
+                android:textColor="@color/app_color"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/empty_msg"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color_primary"
+                android:textSize="15sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/notification_animation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="empty_fireworks.json"
+                app:lottie_loop="true" />
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notification_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</FrameLayout>

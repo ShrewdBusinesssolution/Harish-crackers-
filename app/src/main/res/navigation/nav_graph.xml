@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shopFragment">
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.vedi.vedi_box.views.shop.ShopFragment"
+        android:label="shop_fragment"
+        tools:layout="@layout/shop_fragment" >
+        <action
+            android:id="@+id/action_shopFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_ordersFragment2"
+            app:destination="@id/ordersFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.vedi.vedi_box.views.notification.NotificationFragment"
+        android:label="notification_fragment"
+        tools:layout="@layout/notification_fragment" >
+        <action
+            android:id="@+id/action_notificationFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.vedi.vedi_box.views.order.OrdersFragment"
+        android:label="orders_fragment"
+        tools:layout="@layout/orders_fragment" >
+        <action
+            android:id="@+id/action_ordersFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vedi.vedi_box.views.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+</navigation>

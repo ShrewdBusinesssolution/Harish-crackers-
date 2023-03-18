@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/side_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/side_bank"
+        android:icon="@drawable/bank"
+        android:title="Bank Details" />
+
+    <item android:title="Categories">
+        <menu>
+            <item
+                android:id="@+id/side_kids"
+                android:icon="@drawable/user"
+                android:title="Kids" />
+            <item
+                android:id="@+id/side_elder"
+                android:icon="@drawable/user"
+                android:title="Elders" />
+            <item
+                android:id="@+id/side_Adults"
+                android:icon="@drawable/user"
+                android:title="Adults" />
+        </menu>
+    </item>
+    <item android:title="Others">
+        <menu>
+
+            <item
+                android:id="@+id/side_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/side_contact"
+                android:icon="@drawable/ic_contact"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/side_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>
